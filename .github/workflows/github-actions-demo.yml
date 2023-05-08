@@ -3,6 +3,11 @@ name: Pylint Test
 on: [push]
 
 jobs:
+  Test-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: python --version
+      
   pylint:
     runs-on: ubuntu-latest
 
